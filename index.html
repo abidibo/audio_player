@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio Player</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="audio_player.css" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+        <script src="audio_player.js"></script>
+        <script src="mootools-yc.js"></script>
+    </head>
+    <body>
+        <h1>Audio Player</h1>
+        <audio id="player">
+            <source src="audio/ACDC_-_Back_In_Black-sample.ogg" type="audio/ogg">
+            <source src="audio/ACDC_-_Back_In_Black-sample.mp3" type="audio/mpeg">
+        </audio>
+        <script>
+            var player = new Player('player');
+            player.init();
+        </script>
+    </body>
+</html>
